@@ -1,6 +1,8 @@
-# EifelMono.Extensions
+# EifelMono.Extensions (Pipe)
 
-## THE PIPE Extension
+## THE PIPE Extension (Write your code where you need it)
+
+
 Get the Extension from EifelMono.Extensions 
 
 * [NuGet](https://www.nuget.org/packages/EifelMono.Extensions)
