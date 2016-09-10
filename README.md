@@ -1,12 +1,13 @@
 # EifelMono.Extensions
 
 ## THE PIPE Extension
-from EifelMono.Extensions 
+Get the Extension from EifelMono.Extensions 
 
 * [NuGet](https://www.nuget.org/packages/EifelMono.Extensions)
 
 * [GitHub](https://github.com/EifelMono/EifelMono.Extensions)
 
+or add this to you code!
 ```c#
 namespace EifelMono.Extensions
 {
@@ -23,7 +24,7 @@ namespace EifelMono.Extensions
 
 ## Sample Pipe Extension
 
-Pipe Pipeping with void functions
+Pipeping with void functions
 ```c#
     List<string> list1 = new List<string>
                     {
@@ -45,7 +46,7 @@ Pipe Pipeping with void functions
 
 ```
 
-Pipe Pipeping with Xamarin.Forms
+Pipeping with Xamarin.Forms
 ```c#
 Content = new StackLayout
 {
