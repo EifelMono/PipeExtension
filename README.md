@@ -1,7 +1,6 @@
 # EifelMono.Extensions (Pipe)
 
-## THE PIPE Extension (Write your code where you need it)
-
+## THE PIPE Extension or write your code where you need it!
 
 Get the Extension from EifelMono.Extensions 
 
@@ -9,7 +8,7 @@ Get the Extension from EifelMono.Extensions
 
 * [GitHub](https://github.com/EifelMono/EifelMono.Extensions)
 
-or add this to you code!
+or add this to your code!
 ```c#
 namespace EifelMono.Extensions
 {
@@ -24,31 +23,30 @@ namespace EifelMono.Extensions
 }
 ```
 
-## Sample Pipe Extension
+## Samples
 
-Pipeping with void functions
+### Pipeping with void functions
 ```c#
-    List<string> list1 = new List<string>
-                    {
-                        "list1.1",
-                        "list1.2"
-                    }
-                    .Pipe(p => p.Add("list1.3"))
-                    .Pipe(p => p.RemoveAt(0));
+List<string> list1 = new List<string>
+                            {
+                                "list1.1",
+                                "list1.2"
+                            }
+                            .Pipe(p => p.Add("list1.3"))
+                            .Pipe(p => p.RemoveAt(0));
 
-    List<string> list2 = new List<string>
-                    {
-                        "Hello World",
-                     }
-                    .Pipe((p) =>
-                    {
-                        for (var i = 0; i < 10; i++)
-                            p.Add($"list2.{i} {DateTime.Now}");
-                    }); 
-
+List<string> list2 = new List<string>
+                            {
+                                "Hello World",
+                            }
+                            .Pipe((p) =>
+                            {
+                                for (var i = 0; i < 10; i++)
+                                    p.Add($"list2.{i} {DateTime.Now}");
+                            }); 
 ```
 
-Pipeping with Xamarin.Forms
+### Pipeping with Xamarin.Forms
 ```c#
 Content = new StackLayout
 {
@@ -69,6 +67,5 @@ Content = new StackLayout
 }
 ```
 
-
-###For more see Sample's and Unit Test
+### For more see Sample's on Unit Test on [GitHub](https://github.com/EifelMono/EifelMono.Extensions)
 
