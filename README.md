@@ -1,8 +1,29 @@
-<H1>EifelMono.Extensions</H1>
+# EifelMono.Extensions
 
-<H2>Sample Pipe Extension</H2>
+## THE PIPE Extension
+from EifelMono.Extensions 
 
-Pipe Pipeping of void functions
+* [NuGet](https://www.nuget.org/packages/EifelMono.Extensions)
+
+* [GitHub](https://github.com/EifelMono/EifelMono.Extensions)
+
+```c#
+namespace EifelMono.Extensions
+{
+    public static class GenericExtensions
+    {
+        public static T Pipe<T>(this T pipe, Action<T> action)
+        {
+            action(pipe);
+            return pipe;
+        }
+    }
+}
+```
+
+## Sample Pipe Extension
+
+Pipe Pipeping with void functions
 ```c#
     List<string> list1 = new List<string>
                     {
@@ -22,15 +43,29 @@ Pipe Pipeping of void functions
                             p.Add($"list2.{i} {DateTime.Now}");
                     }); 
 
-    List<string> list3 = new List<string>
-                    {   
-                        "list3.1",
-                        "list3.2",
-                    }
-                    .Pipe(p => p.AddRange(list1));                   
+```
 
+Pipe Pipeping with Xamarin.Forms
+```c#
+Content = new StackLayout
+{
+    Children =
+    {
+        new Button
+        {
+            Text= "ButtonX",
+            Margin= new Thickness(5, 10, 5, 5),
+        }.Pipe((b)=>
+        {
+            b.Clicked+= (sender, e) =>
+            {
+                DisplayAlert("Button.Text",b.Text, "Ok");
+            };
+        })
+    }
+}
 ```
 
 
-<h3>For more see Sample's and Unit Test</h3>
+###For more see Sample's and Unit Test
 
